@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function(){
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons){
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type" === "next")){
+                alert("You clicked Next");
+                runQuiz();
+            } else {
+                let countryType = this.getAttribute("data-type");
+                alert(`You clicked ${countryType}`);
+                checkAnswer();
+            }
+        });
+    }
+})
+
+
 let countries = [
     {
         image : img.src="assets/images/england.jpg",
@@ -33,3 +51,16 @@ let countries = [
 
 
 ]
+
+function runQuiz(){
+
+}
+
+function checkAnswer(){
+
+}
+
+function incrementScore(){
+
+}
+

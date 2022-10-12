@@ -1,4 +1,9 @@
+// Global variable for looping through different quiz questions
+
 let i = 0
+
+// Global array of quiz questions
+
 let countries = [
     {
         image : "assets/images/england.jpg",
@@ -8,8 +13,8 @@ let countries = [
     },
     {
         image : "assets/images/peru.jpg",
-        country1 : "Peru",
-        country2 : "Argentina",
+        country1 : "Argentina",
+        country2 : "Peru",
         answer : "Peru",
     },
     {
@@ -31,6 +36,9 @@ let countries = [
         answer : "Iceland",
     },
 ]
+
+// Adds event listeners to buttons and calls a function when a certain button is selected
+
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
 
@@ -44,14 +52,15 @@ document.addEventListener("DOMContentLoaded", function(){
                 }
             } else {
                 let countryType = this.getAttribute("data-type");
-                //alert(`You clicked ${countryType}`);
                 checkAnswer(countryType);
             }
         });
     }
+    loader();
 })
 
-//This adds an image and text to buttons from the array
+// This adds an image and text to buttons from the array
+
     function loader(){
         let image = document.getElementsByClassName("image");
         image[0].setAttribute("src", countries[i].image);
@@ -63,14 +72,7 @@ document.addEventListener("DOMContentLoaded", function(){
         button[1].dataset.type = countries[i].country2;
     }
 
-
-
-//imageLocation = document.getElementsByClassName("imageload");
-//let img = document.createElement("img");
-//img.setAttribute("src", countries[0].image);
-//img.setAttribute("class", "image");
-//imageLocation[0].appendChild(img);
-
+// Checks the answer the user selected
 
 function checkAnswer(countryType){
     if (countryType === countries[i].answer){
@@ -82,11 +84,23 @@ function checkAnswer(countryType){
     }else{
         alert("NOOOOO");
         i++
+        incrementWrongAnswer();
         loader(i)
         }
     }
 
+// Increments the score if the user selected the correct answer
+
 function incrementScore(){
+    let oldScore = parseInt(document.getElementById("score").innerText)
+     document.getElementById("score").innerText = ++oldScore;
     
+}
+
+// Increments the score if the user selected the correct answer
+
+function incrementWrongAnswer(){
+    let oldScore = parseInt(document.getElementById("incorrect").innerText)
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 

@@ -39,11 +39,9 @@ document.addEventListener("DOMContentLoaded", function(){
             if (this.getAttribute("data-type") == "next"){
                 if (i < countries.length){
                     loader(i);
-                    i++;
                 }else{
                     alert("finished");
                 }
-                
             } else {
                 let countryType = this.getAttribute("data-type");
                 //alert(`You clicked ${countryType}`);
@@ -60,7 +58,9 @@ document.addEventListener("DOMContentLoaded", function(){
     
         let button = document.getElementsByClassName("btn");
         button[0].innerHTML = countries[i].country1;
+        button[0].dataset.type = countries[i].country1;
         button[1].innerHTML = countries[i].country2;
+        button[1].dataset.type = countries[i].country2;
     }
 
 
@@ -72,9 +72,21 @@ document.addEventListener("DOMContentLoaded", function(){
 //imageLocation[0].appendChild(img);
 
 
+function checkAnswer(countryType){
+    if (countryType === countries[i].answer){
 
+        alert("YESSSSS");
+        i++
+        incrementScore();
+        loader(i)
+    }else{
+        alert("NOOOOO");
+        i++
+        loader(i)
+        }
+    }
 
 function incrementScore(){
-
+    
 }
 

@@ -1,7 +1,6 @@
 // Global variable for looping through different quiz questions
 
 let i = 0
-
 // Global array of quiz questions
 
 let countries = [
@@ -44,16 +43,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     for (let button of buttons){
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") == "next"){
-                if (i < countries.length){
-                    loader(i);
-                }else{
-                    alert("finished");
-                }
-            } else {
                 let countryType = this.getAttribute("data-type");
                 checkAnswer(countryType);
-            }
         });
     }
     loader();

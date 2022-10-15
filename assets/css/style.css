@@ -9,6 +9,9 @@ body {
 .start-screen{
     display: block;
 }
+.game-over {
+    display: none;
+}
 
 .game-area {
     display: none;
@@ -41,6 +44,10 @@ body {
     margin: 0 auto;
     margin-top: 10px;
 }
+.retry-button {
+    display: none;
+}
+
 
 .score-area {
     display: none;

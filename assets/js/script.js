@@ -55,19 +55,24 @@
   });
 
 function startGame(){
+   i = 0;
    let stuff = document.getElementsByClassName("game-area")[0];
    let btn = document.getElementsByClassName("start-screen")[0];
    let score = document.getElementsByClassName("score-area")[0];
+   let end = document.getElementsByClassName("game-over")[0];
+   let retry = document.getElementsByClassName("retry-button")[0];
    btn.style.display = "none";
    stuff.style.display = "block";
    score.style.display = "inline-block";
+   end.style.display = "none";
+   retry.style.display = "none";
+   document.getElementById("score").innerText = 0;
+   document.getElementById("incorrect").innerText = 0;
 }
   // This adds an image and text to buttons from the array
   
 function loader(){
-   if (i == countries.length){
-        console.log("finished");
-   }else{
+   if (i < countries.length){
    let image = document.getElementsByClassName("image");
    image[0].setAttribute("src", countries[i].image);
    let button = document.getElementsByClassName("btn");
@@ -76,9 +81,11 @@ function loader(){
    button[2].innerHTML = countries[i].country2;
    button[2].dataset.type = countries[i].country2;
    }
+   else{
+    gameOver();
+   }
 }
 
-  
   // Checks the answer the user selected and modifies CSS with a timer
   
   function checkAnswer(countryType){
@@ -96,7 +103,7 @@ function loader(){
       background.style.backgroundColor = org;
       i++;
       loader(i);
-      }, 2000);
+    }, 2000);
  }
   
   // Increments the score if the user selected the correct answer
@@ -114,3 +121,11 @@ function loader(){
       document.getElementById("incorrect").innerText = ++oldScore;
   }
   
+  function gameOver(){
+    let stuff = document.getElementsByClassName("game-area")[0];
+    let end = document.getElementsByClassName("game-over")[0];
+    let btn = document.getElementsByClassName("retry-button")[0];
+    stuff.style.display = "none";
+    end.style.display = "block";
+    btn.style.display = "block";
+}

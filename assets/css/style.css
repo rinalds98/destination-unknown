@@ -1,7 +1,10 @@
+/* Google Font Imported */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 /* Global CSS */
 
 body {
+    font-family: lato, sans-serif;
     background-color: #f4f6f6;
     text-align: center;
 }
@@ -61,6 +64,10 @@ body {
     border-radius: 5px;
 }
 
+.question-area {
+    display: flex;
+}
+
 .imageload {
     width: 100%;
     background-color: lightblue;
@@ -79,6 +86,9 @@ body {
 #instructions {
     font-size: 1.3rem;
 }
+.control-area {
+    padding: 20px 0;
+}
 /* Score area */
 
 .score-area {
@@ -91,7 +101,7 @@ body {
     padding: 0 10px;
 }
 
-/* Game over screen */
+/* Gameover screen */
 
 .game-over {
     display: none;

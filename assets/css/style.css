@@ -1,32 +1,65 @@
+
+/* Global CSS */
+
 body {
-    background-color: white;
+    background-color: #f4f6f6;
     text-align: center;
 }
 
 #heading {
     text-align: center;
 }
-.start-screen{
-    display: block;
-}
-.game-over {
-    display: none;
+
+.btn {
+    background-color: #4c6d83;
+    color: #fff;
 }
 
-.game-area {
-    display: none;
-    background-color: lightgrey;
+.btn:hover {
+    background-color: #fff ;
+    color: #000;
+}
+
+/* Start Screen */
+
+.start-screen{
+    display: block;
+    background-color: white;
     box-sizing: border-box;
+    border: 2px groove;
     width: 85%;
     max-height: 500px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    border-radius: 50px;
+    border-radius: 5px;
+}
+.start-screen p {
+    font-size: 1.3rem;
 }
 
+.btn--start {
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 50%;
+}
 
+/* Main game area*/
+
+.game-area {
+    display: none;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px groove;
+    width: 85%;
+    max-height: 550px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 5px;
+}
 
 .imageload {
     width: 100%;
@@ -39,21 +72,45 @@ body {
     padding: 10px 0;
 }
 
-.btn--next {
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
+.btn--country{
+    font-size: 1.5rem;
+    width: 25%;
 }
-.retry-button {
-    display: none;
+#instructions {
+    font-size: 1.3rem;
 }
-
+/* Score area */
 
 .score-area {
-    display: none;
+    display: inline-block;
 }
 
 .scores {
     display: inline-block;
+    font-size: 1.3rem;
     padding: 0 10px;
+}
+
+/* Game over screen */
+
+.game-over {
+    display: none;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px groove;
+    width: 85%;
+    max-height: 500px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 5px;
+}
+.game-over p {
+    font-size: 1.3rem;
+}
+.btn--retry {
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 50%;
 }

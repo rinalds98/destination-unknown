@@ -7,6 +7,7 @@ body {
     text-align: center;
 }
 .game-area {
+    display: none;
     background-color: lightgrey;
     box-sizing: border-box;
     width: 85%;
@@ -35,6 +36,10 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
+}
+
+.score-area {
+    display: none;
 }
 
 .scores {

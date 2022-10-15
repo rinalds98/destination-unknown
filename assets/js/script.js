@@ -82,19 +82,21 @@ function main() {
   // Checks the answer the user selected
   
   function checkAnswer(countryType){
-      if (countryType === countries[i].answer){
-  
-          alert("YESSSSS");
-          i++;
-          incrementScore();
-          loader(i);
-      }else{
-          alert("NOOOOO");
-          i++;
-          incrementWrongAnswer();
-          loader(i);
-          }
-      }
+    let background = document.getElementsByClassName("imageload")[0];
+    let org = background.style.backgroundColor;
+    if (countryType === countries[i].answer){
+        background.style.backgroundColor = "green";
+        incrementScore();
+    }else {
+        background.style.backgroundColor = "red";
+        incrementWrongAnswer();
+    }
+    setTimeout(function(){
+      background.style.backgroundColor = org;
+      i++;
+      loader(i);
+      }, 2000);
+ }
   
   // Increments the score if the user selected the correct answer
   
@@ -111,4 +113,4 @@ function main() {
       document.getElementById("incorrect").innerText = ++oldScore;
   }
   
-  
+

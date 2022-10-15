@@ -41,6 +41,7 @@ let countries = [
     },
 ];
 
+// Wait for the DOM to finish loading
 // Adds event listeners to buttons and calls a function when a certain button is selected
 
 document.addEventListener("DOMContentLoaded", function(){

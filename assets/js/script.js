@@ -71,7 +71,7 @@ function startGame(){
     end.style.display = "none";
     document.getElementById("score").innerText = 0;
     document.getElementById("incorrect").innerText = 0;
-    loader(i);
+    loader();
 }
 
 // This adds an image and text to buttons from the array
@@ -80,7 +80,7 @@ function loader(){
     if (i < countries.length){
         let image = document.getElementsByClassName("image");
         image[0].setAttribute("src", countries[i].image);
-        image[0].setAttribute("alt", countries[i].altText)
+        image[0].setAttribute("alt", countries[i].altText);
         let button = document.getElementsByClassName("btn");
         button[1].innerHTML = countries[i].country1;
         button[1].dataset.type = countries[i].country1;
@@ -107,7 +107,7 @@ setTimeout(function(){
     background.style.backgroundColor = org;
     i++;
     loader(i);
-    }, 2000);
+    }, 1000);
 }
 
 // Increments the score if the user selected the correct answer
@@ -121,7 +121,7 @@ function incrementScore(){
 // Increments the score if the user selected the incorrect answer
 
 function incrementWrongAnswer(){
-    let oldScore = parseInt(document.getElementById("incorrect")[0].innerText);
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 

@@ -56,16 +56,11 @@ body {
     box-sizing: border-box;
     border: 2px groove;
     width: 85%;
-    max-height: 550px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
     border-radius: 5px;
-}
-
-.question-area {
-    display: flex;
 }
 
 .imageload {
@@ -75,7 +70,7 @@ body {
 }
 
 .image {
-    width: 40%;
+    width: 60%;
     padding: 10px 0;
 }
 
@@ -123,4 +118,37 @@ body {
     padding: 10px;
     font-size: 1.5rem;
     width: 50%;
+}
+
+@media screen and (max-width:900px) {
+    
+    .imageload {
+        width: 100%;
+        background-color: lightblue;
+        border-radius: 25px;
+    }
+
+    .image {
+        width: 80%;
+    }
+
+    .btn--country {
+        width: 50%;
+        margin: 20px 0;
+    }
+
+    .control-area{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .btn--country {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
 }

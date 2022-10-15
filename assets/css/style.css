@@ -6,6 +6,10 @@ body {
 #heading {
     text-align: center;
 }
+.start-screen{
+    display: block;
+}
+
 .game-area {
     display: none;
     background-color: lightgrey;

@@ -56,7 +56,7 @@
 
 function startGame(){
    let stuff = document.getElementsByClassName("game-area")[0];
-   let btn = document.getElementsByClassName("btn")[0];
+   let btn = document.getElementsByClassName("start-screen")[0];
    let score = document.getElementsByClassName("score-area")[0];
    btn.style.display = "none";
    stuff.style.display = "block";
@@ -65,6 +65,9 @@ function startGame(){
   // This adds an image and text to buttons from the array
   
 function loader(){
+   if (i == countries.length){
+        console.log("finished");
+   }else{
    let image = document.getElementsByClassName("image");
    image[0].setAttribute("src", countries[i].image);
    let button = document.getElementsByClassName("btn");
@@ -72,7 +75,9 @@ function loader(){
    button[1].dataset.type = countries[i].country1;
    button[2].innerHTML = countries[i].country2;
    button[2].dataset.type = countries[i].country2;
+   }
 }
+
   
   // Checks the answer the user selected and modifies CSS with a timer
   

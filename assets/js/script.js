@@ -3,7 +3,7 @@
 let i = 0;
 // Global array of quiz questions
 
-let countries = [
+const countries = [
     {
         image : "assets/images/england.jpg",
         altText : "A photo that has the london bridge and river thames",
@@ -104,10 +104,10 @@ function checkAnswer(countryType){
         background.style.backgroundColor = "red";
         incrementWrongAnswer();
     }
-setTimeout(function(){
-    background.style.backgroundColor = org;
-    i++;
-    loader(i);
+    setTimeout(function(){
+        background.style.backgroundColor = org;
+        i++;
+        loader(i);
     }, 1000);
 }
 

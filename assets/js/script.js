@@ -5,35 +5,35 @@ let i = 0;
 
 const countries = [
     {
-        image : "assets/images/test.jpg",
+        image : "assets/images/england.avif",
         altText : "A photo that has the london bridge and river thames",
         country1 : "England",
         country2 : "France",
         answer : "England",
     },
     {
-        image : "assets/images/peru.jpg",
+        image : "assets/images/peru.avif",
         altText : "A photo of machu picchu",
         country1 : "Argentina",
         country2 : "Peru",
         answer : "Peru",
     },
     {
-        image : "assets/images/japan.jpg",
+        image : "assets/images/japan.avif",
         altText : "A photo of mount fuju in the distance",
         country1 : "Japan",
         country2 : "China",
         answer : "Japan",
     },
     {
-        image : "assets/images/dolomites.jpg",
+        image : "assets/images/dolomites.avif",
         altText : "A photo of the dollomites mountain range",
         country1 : "Italy",
         country2 : "Germany",
         answer : "Italy",
     },
     {
-        image : "assets/images/iceland.jpg",
+        image : "assets/images/iceland.avif",
         altText : "A photo of mount Kirkjufellsfoss with a waterfall beside it",
         country1 : "Iceland",
         country2 : "Norway",

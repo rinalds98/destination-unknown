@@ -22,6 +22,7 @@ body {
     margin: 15px 0;
     color: white;
 }
+
 #logo img {
     width: 50px;
     height: 50px;
@@ -33,11 +34,9 @@ body {
     color: #fff;
 }
 
-
-
 /* Start Screen */
 
-.start-screen{
+.start-screen {
     display: block;
     background-color: white;
     box-sizing: border-box;
@@ -45,6 +44,7 @@ body {
     margin: 0 auto;
     border-radius: 30px;
 }
+
 .start-screen p {
     font-size: 1.3rem;
     padding: 15px;
@@ -73,20 +73,22 @@ body {
     width: 100%;
 }
 
-
-.btn--country{
+.btn--country {
     font-size: 1.5rem;
     width: 25%;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 #instructions {
     font-size: 1.3rem;
     padding: 10px 0;
 }
+
 .control-area {
     padding: 20px 0;
 }
+
 /* Score area */
 
 .score-area {
@@ -105,7 +107,8 @@ body {
     display: none;
     background-color: white;
     box-sizing: border-box;
-    margin: 10px;
+    width: 70%;
+    margin: 0 auto;
     border-radius: 30px;
 }
 .game-over p {
@@ -117,7 +120,7 @@ body {
     color: green;
 }
 
-#incorrect{
+#incorrect {
     color: red;
 }
 
@@ -129,12 +132,14 @@ body {
 }
 
 @media screen and (min-width:900px) {
+
     .image {
         width: 100%;
         height: 500px;
         object-fit: cover;
         object-position: top;
     }
+
     .btn:hover {
         background-color: #fff ;
         color: #4085f2;
@@ -142,7 +147,8 @@ body {
 }
 
 @media screen and (max-width:900px) {
-    .start-screen{
+
+    .start-screen {
         width: 100%;
         margin: 0;
 
@@ -164,20 +170,29 @@ body {
         width: 50%;
         margin: 20px 0;
     }
+
     .btn:active {
         background-color: #fff ;
         color: #4085f2;
     }
-    .control-area{
+
+    .control-area {
         padding: 20px 0;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: space-around;
     }
+
+    .game-over {
+        width: 100%;
+        margin: 0;
+
+    }
 }
 
 @media screen and (max-width:900px) {
+
     .btn--country {
         font-size: 1rem;
         margin: 10px 0;

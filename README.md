@@ -33,3 +33,40 @@ User Experience
 
 - ## **As a returning website user I want:**
     1. To be able to retry to get a higher score.
+
+Technologies Used
+=
+
+- ## Languages
+    - HTML5
+    - CSS3
+    - Javascript
+
+- ## Misc. Software
+    - [Google Fonts](https://fonts.google.com/ "googlefonts") - 'Lato' was used through out the website.
+    - [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
+    - [Balsamiq](https://Balsamiq.com/ "Balsamiq") - Wireframes (sketches) were created using Balsamiq.
+
+Credits
+=
+
+## **Content**
+- To set a timer, I went to stack overflow to find how to get a timer to work so it waits a few seconds before loading the next image.
+    - https://stackoverflow.com/questions/5600351/javascript-change-css-color-for-5-seconds
+
+    - [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
+    - [amiresponsive](https://ui.dev/amiresponsive "amiresponsive") - amiresponsive was used to generate a responsive website image used in the README.md file. 
+
+## **Media**
+
+- All images were taken from [unsplash.com](https://unsplash.com/ "unsplash.com").
+
+    - https://unsplash.com/photos/Oja2ty_9ZLM
+
+    - https://unsplash.com/photos/N4DbvTUDikw
+
+    - https://unsplash.com/photos/_KhePTaoa10
+
+    - https://unsplash.com/photos/AaExF6NxvQo
+
+    - https://unsplash.com/photos/65c5xq7Qgdk

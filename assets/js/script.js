@@ -5,7 +5,7 @@ let i = 0;
 
 const countries = [
     {
-        image : "assets/images/england.jpg",
+        image : "assets/images/test.jpg",
         altText : "A photo that has the london bridge and river thames",
         country1 : "England",
         country2 : "France",

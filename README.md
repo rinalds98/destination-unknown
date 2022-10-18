@@ -34,6 +34,42 @@ User Experience
 - ## **As a returning website user I want:**
     1. To be able to retry to get a higher score.
 
+
+
+Testing
+=
+
+## **Solved Bugs**
+- ###################################
+
+- ###################################
+
+## **Unfixed Bugs**
+- If the user clicks the answer buttons very quickly. It can generate extra correct answers. When you retry after the quiz doesnt work as intended anymore.
+
+## **Validator Testing**
+
+- **Testing**
+    - I tested my website on multiple browsers including Chrome, Firefox, and Safari (IOS).
+    - I also tested it on multiple devices including Laptop, Samsung S20 Ultra (Android 12), iPhone 13 Pro Max (IOS 16)
+
+- **HTML**
+    - No errors were returned when passing through the official W3C Validator.
+    **Add Image**
+
+- **CSS**
+    - No Errors were found when passing through the official (Jigsaw) validator.
+    **Add image**
+ 
+ **Javascript**
+    - No Errors were found when passing through the official (JShint) validator.
+    **Add image**
+
+- **Accessibility (Lighthouse)**
+    - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through 'Lighthouse' in Google Devtools.
+    - I also confirmed that my website is fully accessible to people who are visually impaired or use screen-readers.
+    **Add Image**
+
 Technologies Used
 =
 

@@ -95,17 +95,24 @@ function loader(){
 // Checks the answer the user selected and modifies CSS with a timer
 
 function checkAnswer(countryType){
-    let background = document.getElementsByClassName("imageload")[0];
-    let org = background.style.backgroundColor;
+    let background = document.getElementsByClassName("game-area")[0];
+    let text = document.getElementById("instructions");
+
+    let orgBg = background.style.backgroundColor;
+    let orgText = text.style.color;
+
     if (countryType === countries[i].answer){
         background.style.backgroundColor = "green";
+        text.style.color = "white";
         incrementScore();
     } else {
         background.style.backgroundColor = "red";
+        text.style.color = "white";
         incrementWrongAnswer();
     }
     setTimeout(function(){
-        background.style.backgroundColor = org;
+        background.style.backgroundColor = orgBg;
+        text.style.color = orgText;
         i++;
         loader(i);
     }, 1000);

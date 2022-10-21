@@ -55,6 +55,8 @@ body {
     font-size: 1.5rem;
     width: 50%;
     margin: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Main game area*/
@@ -76,6 +78,7 @@ body {
 .btn--country {
     font-size: 1.5rem;
     width: 25%;
+    margin: 0 20px;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -129,6 +132,8 @@ body {
     font-size: 1.5rem;
     width: 50%;
     margin: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (min-width:900px) {

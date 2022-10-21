@@ -198,3 +198,10 @@ body {
         margin: 10px 0;
     }
 }
+
+@media screen and (max-width:400px) {
+
+    #logo {
+        font-size: 0.6rem;
+    }
+}

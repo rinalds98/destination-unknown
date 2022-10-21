@@ -35,14 +35,47 @@ User Experience
     1. To be able to retry to get a higher score.
 
 
+# 1. Strategy
+
+- The main purpose of this quiz is to make it a fun and challenging experience.
+- With this quiz people with an interest in geography can test their skills to find out if they know what country each location is located in.
+
+# 2. Scope
+- After multiple design choices; a simple 2 button choice design was chosen with a big image to make it asthetically pleasing.
+- It has been designed with mobile devices in mind so most smartphones and tablets can access and try the quiz.
+
+# 3. Structure
+- A start screen that explains what the quiz is about, so the user can prepare to answer the questions.
+- For desktop and mobile view the quiz has the same design. To keep it simple for cross platform use.
+- The logo has been centered for both desktop and mobile. While also the logo has been made into a favicon.
+- A game over screen has been implmented to tell the user the quiz has ended. It also shows the score.
+- The 'footer' section provides a copyright statement.
+
+# 4. Skeleton
+## **Wireframes**
+- The initial designs were made as Wireframes using 'Balsamiq'.
+
+![Balsamiq Wireframes](assets/images/wireframe.png)
+
+
+# 5. Surface
+ - ## **Color**
+    - The color theme is based on a simple blue and white design. 
+    - Polygons to be added for asthetic reasons and to add depth to the quiz (Website).
+    - All of the buttons have the same shape and color. They chnage color once hovered over.
+    - the color blue was chosen as the main color to display calmness with the idea that the user would feel relaxed as they complete the quiz.
+    - The colors green and red where chosen for when the user selects a correct or wrong answer.
+
+ - ## **Font**
+    - The font 'Lato' was used throughout the website and was imported from Google Fonts.
+ - ## **Favicon**
+    - The favicon I opted to use was the initials of the website name which consequently is also the logo. I chose the color blue to keep the design the same.
 
 Testing
 =
 
 ## **Solved Bugs**
-- ###################################
-
-- ###################################
+- On mobile devices when the user clicked an answer the button would stay white (In hover mode) this was fixed by using media queries and the 'active' pseudo-class to solve the issue
 
 ## **Unfixed Bugs**
 - If the user clicks the answer buttons very quickly. It can generate extra correct answers. When you retry after the quiz doesnt work as intended anymore.

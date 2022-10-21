@@ -11,7 +11,7 @@ and the user has to guess which country it is by selecting one of the two option
 Users of this website will be able to play the game and test their knowledge. 
 
 
-![Photo of the website on multiple different screens](#)
+![Photo of the website on multiple different screens](assets/images/amiresponsive.png)
 
 The website can be viewed here: [Desination Unknown](https://rinalds98.github.io/destination-unknown/ "Destination Unknown").
 

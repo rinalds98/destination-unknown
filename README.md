@@ -41,14 +41,14 @@ User Experience
 - With this quiz people with an interest in geography can test their skills to find out if they know what country each location is located in.
 
 # 2. Scope
-- After multiple design choices; a simple 2 button choice design was chosen with a big image to make it asthetically pleasing.
+- After multiple design choices; a simple 2-button choice design was chosen with a big image to make it aesthetically pleasing.
 - It has been designed with mobile devices in mind so most smartphones and tablets can access and try the quiz.
 
 # 3. Structure
 - A start screen that explains what the quiz is about, so the user can prepare to answer the questions.
-- For desktop and mobile view the quiz has the same design. To keep it simple for cross platform use.
+- For desktop and mobile view the quiz has the same design. To keep it simple for cross-platform use.
 - The logo has been centered for both desktop and mobile. While also the logo has been made into a favicon.
-- A game over screen has been implmented to tell the user the quiz has ended. It also shows the score.
+- A game over screen has been implemented to tell the user the quiz has ended. It also shows the score.
 - The 'footer' section provides a copyright statement.
 
 # 4. Skeleton
@@ -61,10 +61,10 @@ User Experience
 # 5. Surface
  - ## **Color**
     - The color theme is based on a simple blue and white design. 
-    - Polygons to be added for asthetic reasons and to add depth to the quiz (Website).
-    - All of the buttons have the same shape and color. They chnage color once hovered over.
+    - Polygons to be added for aesthetic reasons and to add depth to the quiz (Website).
+    - All of the buttons have the same shape and color. They change color once hovered over.
     - the color blue was chosen as the main color to display calmness with the idea that the user would feel relaxed as they complete the quiz.
-    - The colors green and red where chosen for when the user selects a correct or wrong answer.
+    - The colors green and red were chosen for when the user selects a correct or wrong answer.
 
  - ## **Font**
     - The font 'Lato' was used throughout the website and was imported from Google Fonts.
@@ -78,7 +78,7 @@ Testing
 - On mobile devices when the user clicked an answer the button would stay white (In hover mode) this was fixed by using media queries and the 'active' pseudo-class to solve the issue
 
 ## **Unfixed Bugs**
-- If the user clicks the answer buttons very quickly. It can generate extra correct answers. When you retry after the quiz doesnt work as intended anymore.
+- If the user clicks the answer buttons very quickly. It can generate extra correct answers. When you retry after the quiz doesn't work as intended anymore.
 
 ## **Validator Testing**
 
@@ -100,7 +100,7 @@ Testing
 
 - **Accessibility (Lighthouse)**
     - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through 'Lighthouse' in Google Devtools.
-    - I also confirmed that my website is fully accessible to people who are visually impaired or use screen-readers.
+    - I also confirmed that my website is fully accessible to people who are visually impaired or use screen readers.
     **Add Image**
 
 Technologies Used
@@ -112,7 +112,7 @@ Technologies Used
     - Javascript
 
 - ## Misc. Software
-    - [Google Fonts](https://fonts.google.com/ "googlefonts") - 'Lato' was used through out the website.
+    - [Google Fonts](https://fonts.google.com/ "googlefonts") - 'Lato' was used throughout the website.
     - [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
     - [Balsamiq](https://Balsamiq.com/ "Balsamiq") - Wireframes (sketches) were created using Balsamiq.
 

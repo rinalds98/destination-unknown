@@ -88,20 +88,20 @@ Testing
 
 - **HTML**
     - No errors were returned when passing through the official W3C Validator.
-    **Add Image**
+    ![HTML Validator Check](assets/images/htmlvalidator.png)
 
 - **CSS**
     - No Errors were found when passing through the official (Jigsaw) validator.
-    **Add image**
+    ![CSS Validator Check](assets/images/cssvalidator.png)
  
  **Javascript**
     - No Errors were found when passing through the official (JShint) validator.
-    **Add image**
+    ![Javascript Validator Check](assets/images/jsvalidator.png)
 
 - **Accessibility (Lighthouse)**
     - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through 'Lighthouse' in Google Devtools.
     - I also confirmed that my website is fully accessible to people who are visually impaired or use screen readers.
-    **Add Image**
+    ![Lighthouse Check](assets/images/lighthousereport.png)
 
 Technologies Used
 =
@@ -123,8 +123,11 @@ Credits
 - To set a timer, I went to stack overflow to find how to get a timer to work so it waits a few seconds before loading the next image.
     - https://stackoverflow.com/questions/5600351/javascript-change-css-color-for-5-seconds
 
-    - [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
-    - [amiresponsive](https://ui.dev/amiresponsive "amiresponsive") - amiresponsive was used to generate a responsive website image used in the README.md file. 
+- To add a box shadow I went to W3schools to find information on how to do it.
+    - https://www.w3schools.com/css/css3_shadows_box.asp
+
+- [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
+- [amiresponsive](https://ui.dev/amiresponsive "amiresponsive") - amiresponsive was used to generate a responsive website image used in the README.md file. 
 
 ## **Media**
 

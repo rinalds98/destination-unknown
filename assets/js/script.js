@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     for (let button of buttons){
         button.addEventListener("click", function() {
+        if (this.getAttribute("data-type") === "username"){
+            saveUsername();
+        }
         if (this.getAttribute("data-type") === "start"){
             startGame();
         }else{
@@ -59,6 +62,13 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 });
+
+//Save User Name
+function saveUsername() {
+    let input = document.getElementById("username");
+    localStorage.setItem("name", input.value);
+}
+
 
 // Displays all neccesary divs and resets scores
 
@@ -83,10 +93,10 @@ function loader(){
         image[0].setAttribute("src", countries[i].image);
         image[0].setAttribute("alt", countries[i].altText);
         let button = document.getElementsByClassName("btn");
-        button[1].innerHTML = countries[i].country1;
-        button[1].dataset.type = countries[i].country1;
-        button[2].innerHTML = countries[i].country2;
-        button[2].dataset.type = countries[i].country2;
+        button[2].innerHTML = countries[i].country1;
+        button[2].dataset.type = countries[i].country1;
+        button[3].innerHTML = countries[i].country2;
+        button[3].dataset.type = countries[i].country2;
     } else {
         gameOver();
     }
@@ -139,4 +149,11 @@ function gameOver(){
     let end = document.getElementsByClassName("game-over")[0];
     stuff.style.display = "none";
     end.style.display = "block";
+    let storedValue = localStorage.getItem("name");
+    if (storedValue === null){
+        message = `Thank you for playing <span id="playerName">Player 1</span>`
+    }else{
+        message = `Thank you for playing <span id="playerName">${storedValue}</span>`
+    }
+    document.getElementById("player").innerHTML = message;
 }

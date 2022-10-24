@@ -32,6 +32,8 @@ body {
     background-color: #4085f2;
     padding: 10px;
     color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Start Screen */
@@ -51,12 +53,46 @@ body {
 }
 
 .btn--start {
-    padding: 10px;
     font-size: 1.5rem;
     width: 50%;
     margin: 10px;
+}
+
+#username {
+    background-color: #4085f2;
+    padding: 10px;
+    color: white;
     border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* Changing The placeholder text to white*/
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.btn--save {
+    background-color: #4085f2;
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    box-shadow: none;
+}
+
+form label {
+    font-weight: bold;
+}
+
+#playerInfo {
+    padding: 10px;
 }
 
 /* Main game area*/
@@ -79,8 +115,6 @@ body {
     font-size: 1.5rem;
     width: 25%;
     margin: 0 20px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #instructions {
@@ -118,6 +152,9 @@ body {
     font-size: 1.3rem;
     padding: 15px;
 }
+#playerName {
+    font-weight: bold;
+}
 
 #score {
     color: green;
@@ -128,12 +165,9 @@ body {
 }
 
 .btn--retry {
-    padding: 10px;
     font-size: 1.5rem;
     width: 50%;
     margin: 10px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (min-width:900px) {

@@ -28,7 +28,16 @@
         <p>
             Good luck!
         </p>
-        <button data-type="start" class="btn btn--big btn--start">
+
+        <form>
+            <label for="name">Please Enter Your Username!</label>
+            <div id="playerInfo">
+                <input type='text' name="name" id="username" placeholder="Player 1">
+                <button data-type="username"class="btn btn--save">Save</button>
+            </div>
+        </form>
+
+        <button data-type="start" class="btn btn--start">
             Start Quiz!
         </button>
     </div>
@@ -41,10 +50,10 @@
         </div>
         <div class="control-area">
             
-            <button data-type="country1" class="btn btn--big btn--country">
+            <button data-type="country1" class="btn btn--country">
                 country1
             </button>
-            <button data-type="country2" class="btn btn--big btn--country">
+            <button data-type="country2" class="btn btn--country">
                 country2
             </button>
         </div>
@@ -52,8 +61,7 @@
     
     <!--When the game is finished this code will display-->
     <div class="game-over">
-        <p>
-            Thank you for playing!
+        <p id="player">
         </p>
         <p>
             Your Score is:
@@ -64,7 +72,7 @@
         <p>
             Would you like to try again?
         </p>
-        <button data-type="start" class="btn btn--big btn--retry">
+        <button data-type="start" class="btn btn--retry">
             Retry
         </button>
     </div>

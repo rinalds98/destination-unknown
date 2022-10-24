@@ -65,10 +65,10 @@ document.addEventListener("DOMContentLoaded", function(){
 function startGame(){
     i = 0;
     let stuff = document.getElementsByClassName("game-area")[0];
-    let btn = document.getElementsByClassName("start-screen")[0];
+    let start = document.getElementsByClassName("start-screen")[0];
     let end = document.getElementsByClassName("game-over")[0];
     stuff.style.display = "block";
-    btn.style.display = "none";
+    start.style.display = "none";
     end.style.display = "none";
     document.getElementById("score").innerText = 0;
     document.getElementById("incorrect").innerText = 0;

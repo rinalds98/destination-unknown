@@ -71,6 +71,31 @@ User Experience
  - ## **Favicon**
     - The favicon I opted to use was the initials of the website name which consequently is also the logo. I chose the color blue to keep the design the same.
 
+Features
+=
+Destination Unknown quiz is a simple quiz that tests the knowledge of the user. Even though it looks very simple on the outside there is alot of things working in the background so the user can have a pleasant experience while playing.
+
+- ## **Desktop and Mobile viewing**
+It was important to have the website work across both mobile and desktop. This required the use of media queries to accomodate different screen sizes.
+ - Desktop
+
+ ![Desktop Quiz](assets/images/desktop.png)
+ 
+ - Mobile
+ 
+ ![Mobile Quiz](assets/images/mobile.png)
+
+- ## **Start and Game Over Screen**
+    - When first starting the quiz. The user will be first greeted with a start screen that explains what the quiz is about and asks to input their username. Once they are ready they can click the 'start quiz' button and the quiz begins.
+    ![Start Screen](assets/images/startscreen.png)
+
+    - After the quiz is complete the game over screen will show. It will thank the user for playing and it will show the correct and incorrect answers. It will also prompt the user if they would like to try again to see if they can get a better score.
+    ![game Over Screen](assets/images/gameover.png)
+
+- ## **Main Game Area**
+    - The user is presented with an image of a random country and 2 answers to select from. When the user selects the correct country the white background will flash green but if they select the wrong country it will flash red. 
+    ![Main Game Area](assets/images/desktop.png)
+
 Testing
 =
 

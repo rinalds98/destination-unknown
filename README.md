@@ -73,10 +73,10 @@ User Experience
 
 Features
 =
-Destination Unknown quiz is a simple quiz that tests the knowledge of the user. Even though it looks very simple on the outside there is alot of things working in the background so the user can have a pleasant experience while playing.
+The quiz 'Destination Unknown' is a simple quiz that tests the knowledge of the user. Even though it looks very simple on the outside there are a lot of things working in the background so the user can have a pleasant experience while playing.
 
 - ## **Desktop and Mobile viewing**
-It was important to have the website work across both mobile and desktop. This required the use of media queries to accomodate different screen sizes.
+It was important to have the website work across both mobile and desktop. This required the use of media queries to accommodate different screen sizes.
  - Desktop
 
  ![Desktop Quiz](assets/images/desktop.png)
@@ -100,10 +100,10 @@ Testing
 =
 
 ## **Solved Bugs**
-- On mobile devices when the user clicked an answer the button would stay white (In hover mode) this was fixed by using media queries and the 'active' pseudo-class to solve the issue
+- On mobile devices when the user clicked an answer the button would stay white (In hover mode) this was fixed by using media queries and the 'active' pseudo-class to solve the issue.
 
 ## **Unfixed Bugs**
-- If the user clicks the answer buttons very quickly. It can generate extra correct answers. When you retry after the quiz doesn't work as intended anymore.
+- If the user clicks the answer buttons very quickly. It can generate extra correct answers. When you click retry at the end of the game, it doesn't work as intended anymore.
 
 ## **Validator Testing**
 
@@ -128,6 +128,30 @@ Testing
     - I also confirmed that my website is fully accessible to people who are visually impaired or use screen readers.
     ![Lighthouse Check](assets/images/lighthousereport.png)
 
+
+## **Manual Testing**
+The Following was tested manually and passed:
+
+- **Username Input**
+    - By adding a username it gets stored in local storage until the end of the quiz where the username is displayed.
+- **Buttons**
+    - Start Quiz button works as intended. Changes from the start screen to the game screen.
+    - The answer buttons work as designed giving the user feedback if they got the correct or incorrect answer.
+    - In the game over screen, the retry button works as intended resetting back to the first quiz question.
+- **javascript**
+    - When the user gets to the final quiz question, after answering it automatically brings the user to the game over screen.
+    - The score is being tracked accurately.
+
+Deployment
+=
+
+**The site was deployed to GitHub pages. The steps to deploy are as follows:**
+- In the GitHub repository, navigate to the Settings tab and on the left side menu click 'Pages'
+- Select 'Deploy From Branch' and from the 'branch' option select 'Main' and click 'Save'
+- Once it has been saved. A link will be provided to access the completed Website.
+
+The live link can be found here [Desination Unknown](https://rinalds98.github.io/destination-unknown/ "Destination Unknown").
+
 Technologies Used
 =
 
@@ -145,13 +169,23 @@ Credits
 =
 
 ## **Content**
-- To set a timer, I went to stack overflow to find how to get a timer to work so it waits a few seconds before loading the next image.
+- To set a timer, I went to stack overflow to find out how to get a timer to work so it waits a few seconds before loading the next image.
     - https://stackoverflow.com/questions/5600351/javascript-change-css-color-for-5-seconds
 
 - To add a box shadow I went to W3schools to find information on how to do it.
     - https://www.w3schools.com/css/css3_shadows_box.asp
 
+- To add a Start and Game Over screen I used 'David Reids' youtube video for guidance and inspiration on how to do it.
+    - https://www.youtube.com/watch?v=8_zUEh7Vqhs&ab_channel=DavidReid
+
+- To modify datasets I used 'webdevsimplified' blog website to gain insight on how to do it.
+    - https://blog.webdevsimplified.com/2020-10/javascript-data-attributes/
+
+- To Modify the color of the placeholder text for the username, I went to W3Schools to make it compatible with multiple browsers.
+    - https://www.w3schools.com/howto/howto_css_placeholder.asp
+
 - [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
+
 - [amiresponsive](https://ui.dev/amiresponsive "amiresponsive") - amiresponsive was used to generate a responsive website image used in the README.md file. 
 
 ## **Media**

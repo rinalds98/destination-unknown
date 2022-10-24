@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 //Save User Name
 function saveUsername() {
-    let input = document.getElementById("username");
+    let input = document.getElementById("name");
     localStorage.setItem("name", input.value);
 }
 
@@ -149,11 +149,12 @@ function gameOver(){
     let end = document.getElementsByClassName("game-over")[0];
     stuff.style.display = "none";
     end.style.display = "block";
+    let message;
     let storedValue = localStorage.getItem("name");
     if (storedValue === null){
-        message = `Thank you for playing <span id="playerName">Player 1</span>`
+        message = `Thank you for playing <span id="playerName">Player 1</span>`;
     }else{
-        message = `Thank you for playing <span id="playerName">${storedValue}</span>`
+       	message = `Thank you for playing <span id="playerName">${storedValue}</span>`;
     }
     document.getElementById("player").innerHTML = message;
 }

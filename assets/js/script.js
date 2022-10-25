@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
-//Save User Name
+//Save username to local storage
 function saveUsername() {
     let input = document.getElementById("name");
     localStorage.setItem("name", input.value);

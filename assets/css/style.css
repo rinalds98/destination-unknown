@@ -58,12 +58,15 @@ body {
     margin: 10px;
 }
 
+/* Username */
+
 #name {
     background-color: #4085f2;
     padding: 10px;
     color: white;
     border-radius: 25px;
 }
+
 /* Changing The placeholder text to white*/
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -104,7 +107,6 @@ form label {
     border-radius: 30px;
     width: 60%;
     margin: 0 auto;
-
 }
 
 .imageload {
@@ -235,6 +237,11 @@ form label {
     .btn--country {
         font-size: 1rem;
         margin: 10px 0;
+    }
+}
+@media screen and (min-width: 1366px){
+    .image {
+        height: 100%;
     }
 }
 

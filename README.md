@@ -49,7 +49,6 @@ User Experience
 - For desktop and mobile view the quiz has the same design. To keep it simple for cross-platform use.
 - The logo has been centered for both desktop and mobile. While also the logo has been made into a favicon.
 - A game over screen has been implemented to tell the user the quiz has ended. It also shows the score.
-- The 'footer' section provides a copyright statement.
 
 # 4. Skeleton
 ## **Wireframes**
@@ -76,24 +75,27 @@ Features
 The quiz 'Destination Unknown' is a simple quiz that tests the knowledge of the user. Even though it looks very simple on the outside there are a lot of things working in the background so the user can have a pleasant experience while playing.
 
 - ## **Desktop and Mobile viewing**
-It was important to have the website work across both mobile and desktop. This required the use of media queries to accommodate different screen sizes.
- - Desktop
+    - It was important to have the website work across both mobile and desktop. This required the use of media queries to accommodate different screen sizes.
+    - Desktop
 
- ![Desktop Quiz](assets/images/desktop.png)
+    ![Desktop Quiz](assets/images/desktop.png)
  
- - Mobile
+    - Mobile
  
- ![Mobile Quiz](assets/images/mobile.png)
+    ![Mobile Quiz](assets/images/mobile.png)
 
 - ## **Start and Game Over Screen**
     - When first starting the quiz. The user will be first greeted with a start screen that explains what the quiz is about and asks to input their username. Once they are ready they can click the 'start quiz' button and the quiz begins.
+    
     ![Start Screen](assets/images/startscreen.png)
 
     - After the quiz is complete the game over screen will show. It will thank the user for playing and it will show the correct and incorrect answers. It will also prompt the user if they would like to try again to see if they can get a better score.
+    
     ![game Over Screen](assets/images/gameover.png)
 
 - ## **Main Game Area**
     - The user is presented with an image of a random country and 2 answers to select from. When the user selects the correct country the white background will flash green but if they select the wrong country it will flash red. 
+    
     ![Main Game Area](assets/images/desktop.png)
 
 Testing
@@ -121,7 +123,8 @@ Testing
  
  **Javascript**
     - No Errors were found when passing through the official (JShint) validator.
-    ![Javascript Validator Check](assets/images/jsvalidator.png)
+    - 1 Warning came up - "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (saveUsername, startGame, checkAnswer)"
+    ![Javascript Validator Check](assets/images/jshint.png)
 
 - **Accessibility (Lighthouse)**
     - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through 'Lighthouse' in Google Devtools.
@@ -139,7 +142,7 @@ The Following was tested manually and passed:
     - The answer buttons work as designed giving the user feedback if they got the correct or incorrect answer.
     - In the game over screen, the retry button works as intended resetting back to the first quiz question.
 - **javascript**
-    - When the user gets to the final quiz question, after answering it automatically brings the user to the game over screen.
+    - When the user gets to the final quiz question, after answering, it automatically brings the user to the game over screen.
     - The score is being tracked accurately.
 
 Deployment

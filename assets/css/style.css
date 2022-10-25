@@ -176,7 +176,7 @@ form label {
 
 /*Desktop View */
 
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1378px){
     .image {
         height: 100%;
     }

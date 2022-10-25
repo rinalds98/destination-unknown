@@ -172,6 +172,18 @@ form label {
     margin: 10px;
 }
 
+/* Media Queries */
+
+/*Desktop View */
+
+@media screen and (min-width: 1366px){
+    .image {
+        height: 100%;
+    }
+}
+
+/*laptop display*/
+
 @media screen and (min-width:900px) {
 
     .image {
@@ -186,6 +198,8 @@ form label {
         color: #4085f2;
     }
 }
+
+/*Mobile Display*/
 
 @media screen and (max-width:900px) {
 
@@ -209,7 +223,8 @@ form label {
 
     .btn--country {
         width: 50%;
-        margin: 20px 0;
+        font-size: 1rem;
+        margin: 10px 0;
     }
 
     .btn:active {
@@ -231,19 +246,7 @@ form label {
 
     }
 }
-
-@media screen and (max-width:900px) {
-
-    .btn--country {
-        font-size: 1rem;
-        margin: 10px 0;
-    }
-}
-@media screen and (min-width: 1366px){
-    .image {
-        height: 100%;
-    }
-}
+/*For small mobile displays*/
 
 @media screen and (max-width:400px) {
 

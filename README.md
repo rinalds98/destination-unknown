@@ -1,7 +1,6 @@
 Destination Unknown
 =
 
-
 Introduction
 =
 Destination Unknown is a simple quiz game to test your geographical skills. It shows a photo of a country,
@@ -14,6 +13,16 @@ Users of this website will be able to play the game and test their knowledge.
 ![Photo of the website on multiple different screens](assets/images/amiresponsive.png)
 
 The website can be viewed here: [Desination Unknown](https://rinalds98.github.io/destination-unknown/ "Destination Unknown").
+
+# Table of contents
+- [User Experience](#userexperience)
+- [Features](#features)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Technologies Used](#technologies)
+- [Credits](#credits)
+
+<div id='userexperience'/>
 
 User Experience
 =
@@ -56,7 +65,6 @@ User Experience
 
 ![Balsamiq Wireframes](assets/images/wireframe.png)
 
-
 # 5. Surface
  - ## **Color**
     - The color theme is based on a simple blue and white design. 
@@ -69,6 +77,8 @@ User Experience
     - The font 'Lato' was used throughout the website and was imported from Google Fonts.
  - ## **Favicon**
     - The favicon I opted to use was the initials of the website name which consequently is also the logo. I chose the color blue to keep the design the same.
+
+<div id='features'/>
 
 Features
 =
@@ -97,6 +107,8 @@ The quiz 'Destination Unknown' is a simple quiz that tests the knowledge of the 
     - The user is presented with an image of a random country and 2 answers to select from. When the user selects the correct country the white background will flash green but if they select the wrong country it will flash red. 
     
     ![Main Game Area](assets/images/desktop.png)
+
+<div id='testing'/>
 
 Testing
 =
@@ -145,6 +157,8 @@ The Following was tested manually and passed:
     - When the user gets to the final quiz question, after answering, it automatically brings the user to the game over screen.
     - The score is being tracked accurately.
 
+<div id='deployment'/>
+
 Deployment
 =
 
@@ -154,6 +168,8 @@ Deployment
 - Once it has been saved. A link will be provided to access the completed Website.
 
 The live link can be found here [Desination Unknown](https://rinalds98.github.io/destination-unknown/ "Destination Unknown").
+
+<div id='technologies'/>
 
 Technologies Used
 =
@@ -168,6 +184,8 @@ Technologies Used
     - [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
     - [Balsamiq](https://Balsamiq.com/ "Balsamiq") - Wireframes (sketches) were created using Balsamiq.
 
+<div id='credits'/>
+
 Credits
 =
 
@@ -177,6 +195,7 @@ Credits
 
 - To add a box shadow I went to W3schools to find information on how to do it.
     - https://www.w3schools.com/css/css3_shadows_box.asp
+    ![W3 Schools Box Shadow](assets/images/boxshadow.png)
 
 - To add a Start and Game Over screen I used 'David Reids' youtube video for guidance and inspiration on how to do it.
     - https://www.youtube.com/watch?v=8_zUEh7Vqhs&ab_channel=DavidReid
@@ -186,6 +205,7 @@ Credits
 
 - To Modify the color of the placeholder text for the username, I went to W3Schools to make it compatible with multiple browsers.
     - https://www.w3schools.com/howto/howto_css_placeholder.asp
+    ![W3 Schools Placeholder Text](assets/images/placeholderText.png)
 
 - [Favicon](https://Favicon.io/ "Favicon") - Favicon used to convert 'PNG' into a favicon 'ICO' format.
 

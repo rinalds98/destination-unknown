@@ -75,7 +75,7 @@ function saveUsername() {
 function startGame(){
     let storedValue = localStorage.getItem("name");
     if (storedValue === null){
-        alert("Please Enter a username!");
+        alert("Please Enter A Username!");
         window.location.reload();
     }else{
         i = 0;

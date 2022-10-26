@@ -65,24 +65,30 @@ document.addEventListener("DOMContentLoaded", function(){
 
 //Save username to local storage
 function saveUsername() {
+    localStorage.clear();
     let input = document.getElementById("name");
     localStorage.setItem("name", input.value);
 }
 
-
 // Displays all neccesary divs and resets scores
 
 function startGame(){
-    i = 0;
-    let stuff = document.getElementsByClassName("game-area")[0];
-    let start = document.getElementsByClassName("start-screen")[0];
-    let end = document.getElementsByClassName("game-over")[0];
-    stuff.style.display = "block";
-    start.style.display = "none";
-    end.style.display = "none";
-    document.getElementById("score").innerText = 0;
-    document.getElementById("incorrect").innerText = 0;
-    loader();
+    let storedValue = localStorage.getItem("name");
+    if (storedValue === null){
+        alert("Please Enter a username!");
+        window.location.reload();
+    }else{
+        i = 0;
+        let stuff = document.getElementsByClassName("game-area")[0];
+        let start = document.getElementsByClassName("start-screen")[0];
+        let end = document.getElementsByClassName("game-over")[0];
+        stuff.style.display = "block";
+        start.style.display = "none";
+        end.style.display = "none";
+        document.getElementById("score").innerText = 0;
+        document.getElementById("incorrect").innerText = 0;
+        loader();
+    }
 }
 
 // This adds an image and text to buttons from the array
@@ -151,10 +157,6 @@ function gameOver(){
     end.style.display = "block";
     let message;
     let storedValue = localStorage.getItem("name");
-    if (storedValue === null){
-        message = `Thank you for playing <span id="playerName">Player 1</span>`;
-    }else{
-       	message = `Thank you for playing <span id="playerName">${storedValue}</span>`;
-    }
+    message = `Thank you for playing <span id="playerName">${storedValue}</span>`;
     document.getElementById("player").innerHTML = message;
 }

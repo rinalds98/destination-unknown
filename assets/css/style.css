@@ -11,15 +11,27 @@
 
 body {
     font-family: lato, sans-serif;
-    background-color: #4085f2;
+
     text-align: center;
 }
+
+/* Website Background */
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #4085f2, #2c67b9, #1d4983, #132d51, #091323);
+    z-index: -1;
+}
+
+/* Website Logo / Header */
 
 #logo {
     display: flex;
     justify-content: center;
     line-height: 50px;
-    margin: 15px 0;
+    margin-bottom: 15px;
     color: white;
 }
 
@@ -27,6 +39,8 @@ body {
     width: 50px;
     height: 50px;
 }
+
+/* Basic Button CSS */
 
 .btn {
     background-color: #4085f2;
